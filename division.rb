@@ -1,0 +1,3 @@
+class Division
+
+end

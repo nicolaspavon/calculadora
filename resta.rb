@@ -1,0 +1,3 @@
+class Resta
+
+end

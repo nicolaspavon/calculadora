@@ -1,0 +1,3 @@
+class Multiplicacion
+
+end
