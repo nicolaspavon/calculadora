@@ -1,3 +1,4 @@
+require_relative "operation"
 class UnaryOperation < Operation
 	attr_accessor :operand
 

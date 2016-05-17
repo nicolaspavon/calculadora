@@ -1,3 +1,0 @@
-class Unaria
-
-end

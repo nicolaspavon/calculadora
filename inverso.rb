@@ -1,3 +1,0 @@
-class Inverso
-
-end
