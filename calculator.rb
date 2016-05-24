@@ -12,10 +12,10 @@ class Calculator
 		subtract: "-",
 		multiplication: "*",
 		division: "/",
-		inverse: "inv",
-		square: "sq",
-		square_root: "sqrt"}
-
+		inverse: "INV",
+		square: "SQ",
+		square_root: "SQRT"}
+		
 	def add_operand(operand)
 			if @current_operation
 				@current_operation.add_operand(operand)
@@ -23,7 +23,7 @@ class Calculator
 				@operand_temp = operand
 		end
 	end
-	def set_operation
+	def set_operation (operator)
 			operation_class = case operator
 				when OPERATIONS[:plus] then Plus
 				when OPERATIONS[:subtract] then Subtraction
