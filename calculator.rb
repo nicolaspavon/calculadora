@@ -15,14 +15,15 @@ class Calculator
 		inverse: "inv",
 		square: "sq",
 		square_root: "sqrt"}
-		def add_operand(operand)
+
+	def add_operand(operand)
 			if @current_operation
 				@current_operation.add_operand(operand)
 			else
 				@operand_temp = operand
-			end
 		end
-		def set_operation
+	end
+	def set_operation
 			operation_class = case operator
 				when OPERATIONS[:plus] then Plus
 				when OPERATIONS[:subtract] then Subtraction
@@ -34,7 +35,7 @@ class Calculator
 			end
 			@current_operation = operation_class.new(@operand_temp)
 			@operand_temp = ""
-		end
+	end
 		def execute
 			result = @current_operation.execute
 			clear
@@ -42,9 +43,9 @@ class Calculator
 		rescue ZeroDivisionError
 			"ERROR"
 		end
-		end
+
 		def clear
 			@current_operation = nil
 			@operand_temp = nil
 		end
-end
+	end
